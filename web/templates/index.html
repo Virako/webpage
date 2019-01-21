@@ -1,0 +1,361 @@
+{% load static %}
+
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Virako - Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/animate.css" %}">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <script src="{% static "js/modernizr.custom.32033.js" %}"></script>
+
+    <!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="pre-loader">
+        <div class="load-con">
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+        <header class="masthead">
+            <div class="slider-container" id="slider">
+                <div class="container">
+                    <div class="row mh-container">
+                        <h1><span>Virako</span></h1>
+                        <h2>Víctor Ramírez de la Corte</h2>
+                        <hr>
+
+                        <h2><span>Developer at <a id="wadobo" target="_blank" href="https://wadobo.com">No es magia es Wadobo S.L.L.</a></span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fixed navbar -->
+            <div class="navbar navbar-static-top" id="nav" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-align-justify"></i>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav social hidden-xs hidden-sm">
+                            <li><a target="_blank" href="https://github.com/virako"><i class="fa fa-github fa-lg fa-fw"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/virako"><i class="fa fa-linkedin fa-lg fa-fw"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/virako"><i class="fa fa-twitter fa-lg fa-fw"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/virako"><i class="fa fa-facebook fa-lg fa-fw"></i></a></li>
+                            <li><a target="_blank" href="mailto:virako.9@gmail.com"><i class="fa fa-envelope fa-lg fa-fw"></i></a></li>
+                            <li><a target="_blank" href="tel:+34645463860"><i class="fa fa-mobile fa-lg fa-fw"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#slider">Home</a></li>
+                            <li><a href="#screenshots">skills</a></li>
+                            <li><a href="#team">projects</a></li>
+                            <li><a href="#talks">talks</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!--/.container -->
+            </div>
+            <!--/.navbar -->
+
+        </header>
+
+        <section id="screenshots">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 hidden-xs"></div>
+                    <div class="col-md-8">
+                        <div class="section-heading scrollpoint sp-effect3">
+                            <h3><span>skills</span></h3>
+                            <span class="divider"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-2 hidden-xs"></div>
+                </div>
+            </div>
+            <div id="grid-screenshots">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <h1>Basic</h1>
+                        <h3>C/C++</h3>
+                        <h3>Godot</h3>
+                        <h3>Android</h3>
+                        <h3>Kotlin</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h1>Medium</h1>
+                        <h3>React</h3>
+                        <h3>Javascript</h3>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h1>Advanced</h1>
+                        <h3>Python</h3>
+                        <h3>Django</h3>
+                        <h3>Testing</h3>
+                        <h3>Phonegap</h3>
+                        <h3>Linux</h3>
+                        <h3>Vim</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="container">
+                <div id="carousel-team" class="carousel slide" data-ride="carousel">
+                    <div class="row">
+                        <div class="col-md-2 hidden-xs">
+                            <a class="car-prev" href="#carousel-team" role="button" data-slide="prev">
+                                <i class="fa fa-chevron-left fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="section-heading scrollpoint sp-effect3">
+                                <h3><span>projects</span></h3>
+                                <span class="divider"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 hidden-xs">
+                            <a class="car-next" href="#carousel-team" role="button" data-slide="next">
+                                <i class="fa fa-chevron-right fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="member">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object" src="{% static "img/projects/socializa.png" %}" alt="socializa">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">
+                                                        Socializa
+                                                        <ul>
+                                                            <li><a href="https://github.com/wadobo/socializa/"><i class="fa fa-github"></i></a></li>
+                                                            <li><a href="mailto:socializa@wadobo.com"><i class="fa fa-envelope"></i></a></li>
+                                                        </ul>
+                                                    </h4>
+                                                    <p>Powered by Wadobo</p>
+                                                    <span class="divider"></span>
+                                                    <p>Its a game for playing with people out of home.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="member" style="display: none;">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object" src="http://via.placeholder.com/300/ffffff/de5749/?text=Developing..." alt="">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">
+                                                        Developing...
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                                        </ul>
+                                                    </h4>
+                                                    <p>...</p>
+                                                    <span class="divider"></span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" style="display: none;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="member">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object" src="http://via.placeholder.com/300/ffffff/de5749/?text=Developing..." alt="">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">
+                                                        Developing...
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                                        </ul>
+                                                    </h4>
+                                                    <p>...</p>
+                                                    <span class="divider"></span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="member">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object" src="http://via.placeholder.com/300/ffffff/de5749/?text=Developing..." alt="">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">
+                                                        Developing...
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                                        </ul>
+                                                    </h4>
+                                                    <p>...</p>
+                                                    <span class="divider"></span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="talks">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 hidden-xs"></div>
+                    <div class="col-md-8">
+                        <div class="section-heading scrollpoint sp-effect3">
+                            <h3><span>talks</span></h3>
+                            <span class="divider"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-2 hidden-xs"></div>
+                </div>
+            </div>
+            <div id="grid-talks">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12 videoWrapper">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/l2GxQCk36Bc"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 videoWrapper">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lmrc501yghE"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 videoWrapper">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o_3nw89CeRs"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 videoWrapper">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XwNG1--Sy7E"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 videoWrapper">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PxKfYR9mx68"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 clearfix">
+                        <div class="section-heading scrollpoint sp-effect3">
+                            <h3><span>Contact with me</span></h3>
+                            <span class="divider"></span>
+                        </div>
+                    </div>
+                    <div class="social col-md-12">
+                        <div class="col-sm-2 col-xs-4">
+                            <a target="_blank" href="https://github.com/virako"><i class="fa fa-github fa-4x fa-fw"></i></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-4">
+                            <a target="_blank" href="https://www.linkedin.com/in/virako"><i class="fa fa-linkedin fa-4x fa-fw"></i></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-4">
+                            <a target="_blank" href="https://twitter.com/virako"><i class="fa fa-twitter fa-4x fa-fw"></i></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-4">
+                            <a target="_blank" href="https://www.facebook.com/virako"><i class="fa fa-facebook fa-4x fa-fw"></i></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-4">
+                            <a target="_blank" href="mailto:virako.9@gmail.com"><i class="fa fa-envelope fa-4x fa-fw"></i></a>
+                        </div>
+                        <div class="col-sm-2 col-xs-4">
+                            <a target="_blank" href="tel:+34645463860"><i class="fa fa-mobile fa-4x fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-md-12">
+                        <p class="rights">
+                            2014 <span>SevenApp</span> Landing Page Developed by <a href="http://www.scoopthemes.com"><span>ScoopThemes</span></a>
+                        </p>
+                        <p class="rights">
+                            2017 <span>Self</span> Developed by <a href="http://virako.es"><span>Virako</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{% static "js/jquery.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/waypoints.min.js" %}"></script>
+
+    <script src="{% static "js/script.js" %}"></script>
+    <script>
+        $(document).ready(function() {
+            appMaster.preLoader();
+        });
+    </script>
+
+</body>
+
+</html>
