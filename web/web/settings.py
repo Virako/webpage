@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from os import environ as env
+
+import django_heroku
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,9 +27,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#r3w=3sg^k$k-^c09z7gm_1ygkbo$%51-d5qlgeg*5mx8mn(0&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.get('DEBUG', True)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [env.get('ALLOWED_HOST', 'localhost')]
 
 
 # Application definition
@@ -79,8 +83,12 @@ WSGI_APPLICATION = 'web.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': env.get('ENGINE', 'django.db.backends.postgresql'),
+        'NAME': env.get('NAME', 'web'),
+        'USER': env.get('USER', 'web'),
+        'PASSWORD': env.get('PASSWORD', 'web'),
+        'HOST': env.get('HOST', 'localhost'),
+        'PORT': env.get('PORT', '5432'),
     }
 }
 
@@ -121,7 +129,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = env.get('STATIC_URL', '/static/')
+
+django_heroku.settings(locals())
 
 try:
     from local_settings import *
