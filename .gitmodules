@@ -1,6 +1,3 @@
-[submodule "web/django-objs"]
-	path = web/django-objs
-	url = https://github.com/wadobo/django-objs.git
-[submodule "django-objs"]
-	path = django-objs
+[submodule "web/objs"]
+	path = web/objs
 	url = https://github.com/wadobo/django-objs.git
